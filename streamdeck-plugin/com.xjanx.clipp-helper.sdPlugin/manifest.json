@@ -1,0 +1,86 @@
+{
+	"$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+	"Name": "Clipp Helper",
+	"Version": "1.0.0.0",
+	"Author": "XjanX",
+	"Description": "Stream-Deck-Tasten für den Stream-Merkzettel: Clips markieren, verpasste Stellen und Stream-Uhr – mit Live-Anzeige auf den Tasten.",
+	"UUID": "com.xjanx.clipp-helper",
+	"Category": "Stream-Merkzettel",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"Icon": "imgs/plugin/marketplace",
+	"CodePath": "bin/plugin.js",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion": "7.1"
+	},
+	"OS": [
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "enabled"
+	},
+	"Actions": [
+		{
+			"Name": "Clip hier",
+			"UUID": "com.xjanx.clipp-helper.clip",
+			"Icon": "imgs/actions/clip/icon",
+			"Tooltip": "Clip-Stelle im Stream-Merkzettel merken (zeigt geclippt/gesamt)",
+			"Controllers": [
+				"Keypad"
+			],
+			"UserTitleEnabled": false,
+			"States": [
+				{
+					"Image": "imgs/actions/clip/key",
+					"TitleAlignment": "bottom"
+				}
+			]
+		},
+		{
+			"Name": "Bin weg / Wieder da",
+			"UUID": "com.xjanx.clipp-helper.gap",
+			"Icon": "imgs/actions/gap/icon",
+			"Tooltip": "Verpassten Abschnitt starten bzw. beenden",
+			"Controllers": [
+				"Keypad"
+			],
+			"UserTitleEnabled": false,
+			"DisableAutomaticStates": true,
+			"States": [
+				{
+					"Image": "imgs/actions/gap/key",
+					"TitleAlignment": "bottom"
+				},
+				{
+					"Image": "imgs/actions/gap/key-away",
+					"TitleAlignment": "bottom"
+				}
+			]
+		},
+		{
+			"Name": "Stream-Uhr Start/Pause",
+			"UUID": "com.xjanx.clipp-helper.clock",
+			"Icon": "imgs/actions/clock/icon",
+			"Tooltip": "Stream-Uhr starten oder pausieren (zeigt die aktuelle Zeit)",
+			"Controllers": [
+				"Keypad"
+			],
+			"UserTitleEnabled": false,
+			"DisableAutomaticStates": true,
+			"States": [
+				{
+					"Image": "imgs/actions/clock/key-run",
+					"TitleAlignment": "bottom"
+				},
+				{
+					"Image": "imgs/actions/clock/key-pause",
+					"TitleAlignment": "bottom"
+				}
+			]
+		}
+	]
+}
