@@ -69,6 +69,8 @@ Dein Passwort bekommt das Programm nie zu sehen. Die Anmeldung wird nur lokal au
 
 Änderbar unter Einstellungen, z. B. auf `<ctrl>+<alt>+c`.
 
+![Stream-Merkzettel](screenshots/einstellungen.png)
+
 ## Wo liegen meine Daten?
 
 Alles lokal unter `%APPDATA%\StreamMerkzettel`:
