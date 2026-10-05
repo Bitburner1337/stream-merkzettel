@@ -3,7 +3,7 @@
 Ein kleines Windows-Programm für alle, die Streams schauen und hinterher clippen wollen.
 Du markierst während des Streams per Tastendruck, wo etwas Clip-würdiges passiert ist und welche Stellen du verpasst hast – später arbeitest du die Liste in Ruhe ab.
 
-![Stream-Merkzettel](screenshots/hauptfenster.png)
+![Stream-Merkzettel](screenshots/hauptfenster2.png)
 
 ## Was das Programm kann
 
