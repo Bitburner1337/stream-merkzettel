@@ -1,0 +1,16 @@
+# Python / PyInstaller
+__pycache__/
+*.pyc
+build/
+dist/
+*.spec
+
+# Fertige Dateien gehören in die Releases, nicht ins Repository
+*.exe
+*.streamDeckPlugin
+
+# Stream-Deck-Plugin
+node_modules/
+streamdeck-plugin/com.xjanx.clipp-helper.sdPlugin/bin/
+streamdeck-plugin/com.xjanx.clipp-helper.sdPlugin/logs/
+*.log
